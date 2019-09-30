@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <section>
+                <h1>Agregar producto</h1>
+                <form>
+                    <div>
+                    <label>Código: </label>
+                    <input id="codigo" type="number" value="1">
+                    </div>
+                    <div>
+                    <label>Nombre: </label>
+                    <input id="nArticulo" type="text" value="pastel">
+                    </div>
+                    <div>
+                    <label>Precio: </label>
+                    <input id="precio" type="number" value="200">
+                    </div>
+                    <div>
+                    <label>Cantidad: </label>
+                    <input id="cantidad" type="number" value="4">
+                    </div>
+                    <div>
+                    <label>Descripción: </label>
+                    <input id="descripcion" type="text" value="pastel de chocolate">
+                    </div>
+                    <div>
+                    <label>Posicion en Inventario: </label>
+                    <input id="ubicacion" type="number" min="1">
+                    </div>
+                    <button id="agregar" type="button">Agregar</button>
+                </form>
+                <h1>Buscar producto</h1>
+                <form>
+                    <label>Código: </label>
+                    <input id="buscarCod" type="number">
+                    <button id="buscar" type="button">Buscar</button>
+                    <div id="tablaBuscar"></div>
+                </form>
+                <h1>Eliminar producto</h1>
+                <form>
+                    <label>Código: </label>
+                    <input id="eliminarCodigo" type="number">
+                    <button id="eliminar" type="button">Eliminar</button>
+                </form>
+            </section>
+            <aside>
+                <h1>Tabla Almacen</h1>
+                <article id="tablaArticulos"></article>
+            </aside>
+    
+</body>
+<script src="articulo.js"></script>
+</html>
